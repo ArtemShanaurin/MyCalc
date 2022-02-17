@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:visibility="visible"
     tools:context=".MainActivity"
-    android:layout_marginLeft="0dp"
+    android:layout_marginLeft="50dp"
     tools:visibility="visible">
 
 
@@ -33,25 +33,22 @@
                 android:inputType="numberDecimal"
                 android:paddingLeft="60dp" />
 
-            <EditText
-                android:id="@+id/number2EditText"
-                android:layout_width="100dp"
+            <TextView
+                android:id="@+id/sumResultText"
+                android:layout_width="107dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:paddingLeft="50dp" />
+                android:layout_marginLeft="40dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="10dp"
+                android:textColor="#101010"
+                android:textSize="20sp" />
+
 
         </TableRow>
 
     </TableLayout>
 
-    <TextView
-        android:id="@+id/sumResultText"
-        android:layout_width="275dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="40dp"
-        android:paddingLeft="50dp" />
+
 
     <TableLayout
         android:layout_height="wrap_content"

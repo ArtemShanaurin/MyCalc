@@ -13,31 +13,40 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var numberStart = binding.number1EditText.text.toString().toDouble()
+
         binding.calcSummaButton.setOnClickListener {
-            val number1 = binding.number1EditText.text.toString().toDouble()
-            val number2 = binding.number2EditText.text.toString().toDouble()
+            try{
+                var result = numberStart
+               // binding.number1EditText.setText("")
+                binding.number1EditText.inputType
+                val number1 = binding.number1EditText.text.toString().toDouble()
+                result += number1
 
-            val result = number1+number2
+                numberStart = result.toDouble()
 
-            binding.sumResultText.text = result.toString()
+                binding.sumResultText.text = result.toString()
+            }catch (e: Exception){
+                binding.sumResultText.text = "Input number field"
+            }
 
         }
 
         binding.calcMinusButton.setOnClickListener {
-            val number1 = binding.number1EditText.text.toString().toDouble()
-            val number2 = binding.number2EditText.text.toString().toDouble()
+            try {
+                val number1 = binding.number1EditText.text.toString().toDouble()
 
-            val result = number1-number2
+            } catch (e: Exception){
 
-            binding.sumResultText.text = result.toString()
+            }
 
         }
 
         binding.calcSeparateButton.setOnClickListener {
             val number1 = binding.number1EditText.text.toString().toDouble()
-            val number2 = binding.number2EditText.text.toString().toDouble()
 
-            val result: Double = number1 / number2
+
+            val result: Double = number1
 
             binding.sumResultText.text = result.toString()
 
@@ -45,9 +54,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.calcMnogButton.setOnClickListener {
             val number1 = binding.number1EditText.text.toString().toDouble()
-            val number2 = binding.number2EditText.text.toString().toDouble()
 
-            val result = number1*number2
+            val result = number1
 
             binding.sumResultText.text = result.toString()
 
