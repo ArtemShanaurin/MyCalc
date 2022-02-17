@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/New"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    android:layout_marginLeft="0dp"
+    tools:visibility="visible">
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tableLayout2">
+
+        <TableRow
+            android:id="@+id/tableRowTextEdit"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <EditText
+                android:id="@+id/number1EditText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:paddingLeft="60dp" />
+
+            <EditText
+                android:id="@+id/number2EditText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingLeft="50dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/sumResultText"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:paddingLeft="50dp" />
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tableLayout1">
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+            <Button
+                android:id="@+id/calcSummaButton"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:text="-"
+                android:id="@+id/calcMinusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <Button
+                android:id="@+id/calcSqrtButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sqrt"></Button>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <Button
+                android:id="@+id/calcSeparateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/"></Button>
+            <Button
+                android:text="*"
+                android:id="@+id/calcMnogButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+            <Button
+                android:text="x.pow"
+                android:id="@+id/calcXpowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp">
+
+            <Button
+                android:id="@+id/calcSinusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sin"></Button>
+            <Button
+                android:text="Cos"
+                android:id="@+id/calcCosinusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp">
+
+            <Button
+                android:text="tan"
+                android:id="@+id/calcTangensButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+            <Button
+                android:text="Cotan"
+                android:id="@+id/calcCotanButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp">
+
+            <Button
+                android:text="Inch"
+                android:id="@+id/calcInchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+            <Button
+                android:text="Cm"
+                android:id="@+id/calcCmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp">
+
+            <Button
+                android:id="@+id/calcEqualButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="="></Button>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
